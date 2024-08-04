@@ -48,7 +48,7 @@ COMMAND_ID=$(aws ssm send-command \
         \"sudo sed -i 's/database_name_here/${DATABASE_NAME}/' /var/www/html/wp-config.php\",
         \"sudo sed -i 's/username_here/${MYSQL_USERNAME}/' /var/www/html/wp-config.php\",
         \"sudo sed -i 's/password_here/${MYSQL_PASSWORD}/' /var/www/html/wp-config.php\",
-        \"sudo sed -i 's/localhost/${PRIVATE_IP}/' /var/www/html/wp-config.php\"
+        \"sudo sed -i 's/localhost/${PRIVATE_IP}/' /var/www/html/wp-config.php\",
 
         \"echo 'server {
             listen 80;
